@@ -33,6 +33,9 @@ const Home = () => {
     clearSearch(); // Clear search when changing category
   };
 
+  // Encontra o objeto da categoria selecionada para pegar o nome
+  const currentCategory = categories.find((cat) => cat.id === selectedCategory);
+
   return (
     <div className="min-h-screen px-4 md:px-8 lg:px-16 py-8 pb-32">
       {/* Hero Section */}
@@ -71,8 +74,8 @@ const Home = () => {
               key={category.id}
               className={`cursor-pointer p-4 rounded-lg transition-all duration-200 hover:scale-105 hover:bg-yellow-400 ${
                 selectedCategory === category.id
-                  ? "ring-4 ring-black"
-                  : "border border-gray-200"
+                  ? "bg-yellow-400 ring-4 ring-black"
+                  : "bg-white border border-gray-200"
               }`}
               onClick={() => handleCategoryClick(category.id)}
             >
@@ -94,12 +97,12 @@ const Home = () => {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <h2 className="text-2xl md:text-3xl font-bold orbitron-bold text-black text-center">
-            Produtos
+            Produtos {currentCategory && `- ${currentCategory.name}`}
           </h2>
           {(selectedCategory || isValidSearch) && (
             <button
               onClick={handleClearFilters}
-              className="text-black hover:text-black/80 transition-colors mt-4 md:mt-0 cursor-pointer"
+              className="text-black hover:bg-black hover:text-white p-[5px] rounded transition-colors mt-4 md:mt-0 cursor-pointer"
             >
               Limpar filtros
             </button>
