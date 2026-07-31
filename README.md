@@ -1,54 +1,96 @@
-# React + TypeScript + Vite
+# 🎮 Loja Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web desenvolvida para simular uma loja virtual de jogos, oferecendo
+uma interface moderna, intuitiva e responsiva para navegação, consulta e
+visualização de produtos.
 
-Currently, two official plugins are available:
+🔗 **Repositório:** https://github.com/Andre-StudioNerd/Loja_Game
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📖 Sobre o Projeto
 
-## Expanding the ESLint configuration
+O **Loja Game** é um projeto Front-End desenvolvido para praticar conceitos de
+desenvolvimento web moderno, criando uma experiência semelhante a uma loja
+digital de games. A aplicação prioriza organização, componentização e uma
+interface agradável para o usuário.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Funcionalidades
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- Catálogo de jogos
+- Visualização dos detalhes dos produtos
+- Interface moderna e responsiva
+- Componentes reutilizáveis
+- Navegação simples e intuitiva
+- Layout inspirado em lojas virtuais
+
+## 🛠️ Tecnologias Utilizadas
+
+- React
+- JavaScript
+- HTML5
+- CSS3
+- Vite
+- Node.js
+
+## 🚀 Como Executar
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/Andre-StudioNerd/Loja_Game.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Acesse a pasta do projeto:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+cd Loja_Game
 ```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Execute a aplicação:
+
+```bash
+npm run dev
+```
+
+Para gerar a versão de produção:
+
+```bash
+npm run build
+```
+
+## 📂 Estrutura do Projeto
+
+```text
+Loja_Game/
+├── public/
+├── src/
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## 🎯 Objetivo
+
+Este projeto foi desenvolvido para praticar a criação de interfaces com React,
+componentização, responsividade e organização de aplicações Front-End, simulando
+uma loja virtual de jogos para compor o portfólio.
+
+## 👨‍💻 Autor
+
+**André Luís Fernandes**
+
+GitHub: https://github.com/Andre-StudioNerd
+
+## 📄 Licença
+
+Este projeto está licenciado sob a licença MIT.
+
+## ⭐ Apoie
+
+Se este projeto foi útil para você ou serviu como inspiração para seus estudos,
+deixe uma ⭐ no repositório.
