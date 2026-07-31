@@ -37,15 +37,29 @@ const Home = () => {
     <div className="min-h-screen px-4 md:px-8 lg:px-16 py-8 pb-32">
       {/* Hero Section */}
       <div className="max-w-6xl mx-auto mb-16">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold orbitron-bold text-[#0B254B] text-center mb-6">
-          Bem-vindo à UseDev
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold orbitron-bold text-black] text-center mb-6">
+          Bem-vindo à Loja game
         </h1>
         <p className="text-base md:text-lg text-gray-600 text-center max-w-2xl mx-auto mb-8">
-          De roupas a gadgets tecnológicos temos tudo para atender suas paixões
-          e hobbies com estilo e autenticidade.
+          De clássicos de 8 a 64 bits até relíquias colecionáveis, temos tudo
+          para reacender a nostalgia dos seus melhores momentos de jogatina.
+        </p>
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold orbitron-bold text-black text-center mb-6 my-[80px]">
+          Sobre a Loja Game
+        </h1>
+        <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto mb-4">
+          Nascida da paixão pela era de ouro dos videogames, a Loja Game é uma
+          homenagem aos consoles, cartuchos e universos que marcaram gerações.
+          Nosso objetivo é celebrar a cultura retrogaming através de uma
+          experiência visual moderna e nostálgica.
+        </p>
+        <p className="text-xs md:text-sm text-gray-500 italic max-w-xl mx-auto">
+          *Este projeto é fictício e foi criado apenas para fins de demonstração
+          de desenvolvimento web e portfólio. NENHUM produto exibido está
+          disponível para venda.
         </p>
 
-        <div className="max-w-xl mx-auto">
+        <div className="max-w-xl mx-auto my-[80px]">
           <SearchInput
             placeholder="Buscar produtos..."
             onSearch={setSearchTerm}
@@ -55,16 +69,16 @@ const Home = () => {
 
       {/* Categories Section */}
       <div className="max-w-6xl mx-auto mb-16">
-        <h2 className="text-2xl md:text-3xl font-bold orbitron-bold text-[#0B254B] text-center mb-8">
+        <h2 className="text-2xl md:text-3xl font-bold orbitron-bold text-black text-center mb-8">
           Categorias
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {categories.map((category) => (
             <div
               key={category.id}
-              className={`cursor-pointer p-4 rounded-lg transition-transform hover:scale-105 ${
+              className={`cursor-pointer p-4 rounded-lg transition-all duration-200 hover:scale-105 hover:bg-yellow-400 ${
                 selectedCategory === category.id
-                  ? "ring-4 ring-[#0B254B]"
+                  ? "ring-4 ring-black"
                   : "border border-gray-200"
               }`}
               onClick={() => handleCategoryClick(category.id)}
@@ -80,13 +94,13 @@ const Home = () => {
       {/* Products Section */}
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
-          <h2 className="text-2xl md:text-3xl font-bold orbitron-bold text-[#0B254B] text-center">
+          <h2 className="text-2xl md:text-3xl font-bold orbitron-bold text-black text-center">
             Produtos
           </h2>
           {(selectedCategory || isValidSearch) && (
             <button
               onClick={handleClearFilters}
-              className="text-[#0B254B] hover:text-[#0B254B]/80 transition-colors mt-4 md:mt-0"
+              className="text-black hover:text-black/80 transition-colors mt-4 md:mt-0 cursor-pointer"
             >
               Limpar filtros
             </button>
@@ -94,7 +108,7 @@ const Home = () => {
         </div>
         {filteredProducts.length === 0 ? (
           <div className="flex flex-col items-center justify-center py-16 px-4 text-center">
-            <p className="text-2xl font-bold text-[#0B254B] mb-4">
+            <p className="text-2xl font-bold text-black mb-4">
               Nenhum produto encontrado
             </p>
             <p className="text-gray-600 mb-8">
@@ -106,7 +120,7 @@ const Home = () => {
             </p>
             <button
               onClick={handleClearFilters}
-              className="bg-[#0B254B] text-white px-6 py-3 rounded-lg hover:bg-[#0B254B]/90 transition-colors"
+              className="bg-black text-white px-6 py-3 rounded-lg hover:bg-black/90 transition-colors cursor-pointer"
             >
               Limpar filtros
             </button>

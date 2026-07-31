@@ -68,7 +68,7 @@ export default function Product() {
   if (!product) {
     return (
       <div className="flex items-center justify-center min-h-screen">
-        <p className="text-xl text-[#0B254B]">Produto não encontrado</p>
+        <p className="text-xl text-black">Produto não encontrado</p>
       </div>
     );
   }
@@ -89,20 +89,20 @@ export default function Product() {
           {/* Product Details Section */}
           <div className="flex flex-col gap-6">
             <div>
-              <h1 className="text-3xl text-[#0B254B] orbitron-bold mb-2">
+              <h1 className="text-3xl text-black orbitron-bold mb-2">
                 {product.name}
               </h1>
-              <p className="text-lg text-[#0B254B] opacity-80">
+              <p className="text-lg text-black opacity-80">
                 {product.description}
               </p>
             </div>
-            <div className="text-2xl font-bold text-[#780BF7]">
+            <div className="text-2xl font-bold text-black">
               {formatPrice(product.price ?? 0)}
             </div>
             {/* Color Selection */}
             {product.colors && product.colors.length > 1 && (
               <div className="space-y-3">
-                <h3 className="text-lg font-semibold text-[#0B254B]">Cor</h3>
+                <h3 className="text-lg font-semibold text-black">Cor</h3>
 
                 <EnhancedRadioGroup
                   options={product.colors}
@@ -114,9 +114,7 @@ export default function Product() {
             {/* Size Selection */}
             {product.sizes && product.sizes.length > 1 && (
               <div className="space-y-3">
-                <h3 className="text-lg font-semibold text-[#0B254B]">
-                  Tamanho
-                </h3>
+                <h3 className="text-lg font-semibold text-black">Tamanho</h3>
                 <EnhancedSelector
                   label="Selecione o tamanho"
                   options={product.sizes}
@@ -127,9 +125,7 @@ export default function Product() {
             )}
             {/* Quantity Selection */}
             <div className="space-y-3">
-              <h3 className="text-lg font-semibold text-[#0B254B]">
-                Quantidade
-              </h3>
+              <h3 className="text-lg font-semibold text-black">Quantidade</h3>
               <EnhancedSelector
                 label="Selecione a quantidade"
                 options={Array.from({ length: 10 }, (_, i) =>
@@ -143,7 +139,7 @@ export default function Product() {
             <Button
               variant="add-to-cart"
               onClick={handleAddToCart}
-              className="w-full py-4 text-lg font-semibold mt-4"
+              className="w-full py-4 text-lg font-semibold mt-4 cursor-pointer"
               content="Adicionar ao carrinho"
             />
           </div>
