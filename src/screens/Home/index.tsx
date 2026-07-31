@@ -50,7 +50,7 @@ const Home = () => {
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold orbitron-bold text-black text-center mb-6 my-[80px]">
           Sobre a Loja Game
         </h1>
-        <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto mb-4">
+        <p className="text-base md:text-lg text-gray-600 max-w-2xl text-center mx-auto mb-4">
           Nascida da paixão pela era de ouro dos videogames, a Loja Game é uma
           homenagem aos consoles, cartuchos e universos que marcaram gerações.
           Nosso objetivo é celebrar a cultura retrogaming através de uma
