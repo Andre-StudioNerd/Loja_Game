@@ -19,7 +19,7 @@ const ProductCard = ({
       }`}
       onClick={onClick}
     >
-      <div className="relative overflow-hidden aspect-square">
+      <div id="card" className="relative overflow-hidden aspect-square">
         <img
           src={product.image}
           alt={product.name}

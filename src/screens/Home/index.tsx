@@ -58,13 +58,6 @@ const Home = () => {
           de desenvolvimento web e portfólio. NENHUM produto exibido está
           disponível para venda.
         </p>
-
-        <div className="max-w-xl mx-auto my-[80px]">
-          <SearchInput
-            placeholder="Buscar produtos..."
-            onSearch={setSearchTerm}
-          />
-        </div>
       </div>
 
       {/* Categories Section */}
@@ -88,6 +81,12 @@ const Home = () => {
               </p>
             </div>
           ))}
+        </div>
+        <div className="max-w-xl mx-auto my-[80px]">
+          <SearchInput
+            placeholder="Buscar produtos..."
+            onSearch={setSearchTerm}
+          />
         </div>
       </div>
 
