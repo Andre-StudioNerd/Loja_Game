@@ -99,7 +99,10 @@ const Cart = () => {
                 <Counter
                   initialValue={item.quantity}
                   onChange={(value) => {
-                    changeQuantity({ ...item, quantity: value });
+                    // Impede que a quantidade diminua abaixo de 1
+                    if (value > 0) {
+                      changeQuantity({ ...item, quantity: value });
+                    }
                   }}
                 />
                 <img
