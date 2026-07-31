@@ -1,0 +1,142 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Super Mario World",
+      "price": 1049.9,
+      "category": 1,
+      "description": "Jogo de plataforma clássico do Mario e Yoshi na Terra dos Dinossauros.",
+      "colors": [],
+      "sizes": [],
+      "image": "/products/mario.png"
+    },
+    {
+      "id": 2,
+      "name": "Donkey Kong Country",
+      "price": 1039.9,
+      "category": 1,
+      "description": "Aventura em 3D pré-renderizado com Donkey Kong e Diddy Kong.",
+      "colors": [],
+      "sizes": [],
+      "image": "/products/donkey.png"
+    },
+    {
+      "id": 3,
+      "name": "The Legend of Zelda: A Link to the Past",
+      "price": 1069.9,
+      "category": 1,
+      "description": "Aclamado RPG de ação no reino de Hyrule e no Mundo das Sombras.",
+      "colors": [],
+      "sizes": [],
+      "image": "/products/zelda.png"
+    },
+    {
+      "id": 4,
+      "name": "Super Metroid",
+      "price": 1059.9,
+      "category": 1,
+      "description": "Explore o planeta Zebes como a caçadora de recompensas Samus Aran.",
+      "colors": [],
+      "sizes": [],
+      "image": "/products/metroid.png"
+    },
+    {
+      "id": 5,
+      "name": "Street Fighter II Turbo",
+      "price": 1019.9,
+      "category": 1,
+      "description": "Clássico jogo de luta arcade com velocidade e lutadores adicionais.",
+      "colors": [],
+      "sizes": [],
+      "image": "/products/street.png"
+    },
+    {
+      "id": 6,
+      "name": "Chrono Trigger",
+      "price": 1099.9,
+      "category": 1,
+      "description": "RPG épico de viagem no tempo criado pelos mestres do gênero.",
+      "colors": [],
+      "sizes": [],
+      "image": "/products/chrono.png"
+    },
+    {
+      "id": 7,
+      "name": "Super Mario Kart",
+      "price": 1029.9,
+      "category": 1,
+      "description": "O jogo original de corrida de kart com os personagens da Nintendo.",
+      "colors": [],
+      "sizes": [],
+      "image": "/products/kart.png"
+    },
+    {
+      "id": 8,
+      "name": "Mega Man X",
+      "price": 1039.9,
+      "category": 1,
+      "description": "Ação frenética de plataforma futurista combatendo Maverick Reploids.",
+      "colors": [],
+      "sizes": [],
+      "image": "/products/megax.png"
+    },
+    {
+      "id": 9,
+      "name": "Sonic - The Hedgehog",
+      "price": 1039.9,
+      "category": 2,
+      "description": "Sonic the Hedgehog é um jogo eletrônico de plataforma produzido pela Sonic Team e publicado pela Sega para o Sega Genesis/Mega Drive.",
+      "colors": [],
+      "sizes": [],
+      "image": "/products/sonic.png"
+    },
+    {
+      "id": 10,
+      "name": "Michael Jackson's - Moonwalker",
+      "price": 1039.9,
+      "category": 2,
+      "description": "As fases deste jogo são inspiradas nos clipes de Michael Jackson, tanto no desenho temático do cenário quanto na músicas originais.",
+      "colors": [],
+      "sizes": [],
+      "image": "/products/moon.png"
+    },
+    {
+      "id": 11,
+      "name": "Castle of Illusion",
+      "price": 1039.9,
+      "category": 2,
+      "description": "Castle of Illusion  é um dos maiores clássicos do Mega Drive, lançado originalmente em 1990.",
+      "colors": [],
+      "sizes": [],
+      "image": "/products/mickey.png"
+    },
+    {
+      "id": 12,
+      "name": "Sonic - The Hedgehog",
+      "price": 1039.9,
+      "category": 3,
+      "description": "Jogo de plataforma.",
+      "colors": [],
+      "sizes": [],
+      "image": "/products/sonic_master.png"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Super-Nintendo",
+      "image": "/categories/snes.png"
+    },
+    {
+      "id": 2,
+      "name": "Mega Drive",
+      "image": "/categories/snes.png"
+    },
+    {
+      "id": 3,
+      "name": "Master System",
+      "image": "/categories/snes.png"
+    }
+  ],
+  "cart": []
+}
