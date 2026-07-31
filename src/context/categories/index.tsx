@@ -16,7 +16,7 @@ export const CategoriesProvider = ({
 }) => {
   const [categories, setCategories] = useState<Category[]>([]);
   const { data, error, fetchData } = useFetch<Category[]>({
-    url: "http://localhost:3001/categories",
+    url: "https://my-json-server.typicode.com/Andre-StudioNerd/Loja_Game/categories",
     method: "GET",
   });
 

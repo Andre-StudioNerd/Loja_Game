@@ -32,7 +32,9 @@ export default function Product() {
         setSelectedProduct(foundProduct);
       } else {
         // If not found in the list, fetch it directly
-        fetch(`http://localhost:3001/products/${id}`)
+        fetch(
+          `https://my-json-server.typicode.com/Andre-StudioNerd/Loja_Game/products/${id}`,
+        )
           .then((res) => res.json())
           .then((data) => {
             setProduct(data);

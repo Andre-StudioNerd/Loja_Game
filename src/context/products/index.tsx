@@ -21,7 +21,7 @@ export const ProductsProvider = ({
   const [products, setProducts] = useState<Product[]>([]);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const { data, error, fetchData } = useFetch<Product[]>({
-    url: "http://localhost:3001/products",
+    url: "https://my-json-server.typicode.com/Andre-StudioNerd/Loja_Game/products",
   });
 
   useEffect(() => {
