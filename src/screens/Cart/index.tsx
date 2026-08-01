@@ -136,6 +136,12 @@ const Cart = () => {
             </div>
           </div>
           <button
+            className="w-full bg-gray-200 text-black py-3 rounded-lg hover:bg-gray-300 transition-colors cursor-pointer"
+            onClick={() => navigate("/")}
+          >
+            Continuar comprando
+          </button>
+          <button
             className="w-full bg-black text-white py-3 rounded-lg hover:bg-black/90 transition-colors mt-4 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
             onClick={handleCheckout}
             disabled={isProcessing}

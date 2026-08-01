@@ -168,3 +168,7 @@
   font-weight: 500;
   font-style: italic;
 }
+body {
+  margin: 0;
+  background-color: white;
+}
