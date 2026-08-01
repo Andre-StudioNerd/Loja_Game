@@ -33,7 +33,7 @@ export default function Product() {
       } else {
         // If not found in the list, fetch it directly
         fetch(
-          `https://my-json-server.typicode.com/Andre-StudioNerd/Loja_Game/products/${id}`,
+          `https://my-json-server.typicode.com/Andre-StudioNerd/Loja_Game/products/${Number(id)}`,
         )
           .then((res) => res.json())
           .then((data) => {
