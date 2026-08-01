@@ -67,7 +67,7 @@ export default function Product() {
 
   if (!product) {
     return (
-      <div className="flex items-center justify-center min-h-screen">
+      <div className="flex items-center justify-center  py-20">
         <p className="text-xl text-black">Produto não encontrado</p>
       </div>
     );
