@@ -74,7 +74,7 @@ export default function Product() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8 mt-16 mb-16">
+    <div className="container mx-auto px-4 py-8 mt-16 mb-[300px]">
       <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Product Image Section */}

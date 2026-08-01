@@ -4,6 +4,7 @@ import { useCategories, useProducts } from "../../context";
 import SearchInput from "../../components/SearchInput/SearchInput";
 import { useState } from "react";
 import { useSearch } from "../../hooks/useSearch";
+import home from "../../assets/home.png";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -47,6 +48,7 @@ const Home = () => {
           De clássicos de 8 a 64 bits até relíquias colecionáveis, temos tudo
           para reacender a nostalgia dos seus melhores momentos de jogatina.
         </p>
+        <img src={home} alt="Loja Game" />
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold orbitron-bold text-black text-center mb-6 my-[80px]">
           Sobre a Loja Game
         </h1>
@@ -128,7 +130,7 @@ const Home = () => {
             </button>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-[300px]">
             {filteredProducts.map((product) => (
               <ProductCard
                 key={product.id}
