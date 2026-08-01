@@ -98,7 +98,10 @@ const Home = () => {
       {/* Products Section */}
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
-          <h2 className="text-2xl md:text-3xl font-bold orbitron-bold text-black text-center">
+          <h2
+            id="produtos"
+            className="text-2xl md:text-3xl font-bold orbitron-bold text-black text-center"
+          >
             Produtos {currentCategory && `- ${currentCategory.name}`}
           </h2>
           {(selectedCategory || isValidSearch) && (

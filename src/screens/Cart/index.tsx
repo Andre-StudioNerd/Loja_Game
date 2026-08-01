@@ -59,8 +59,15 @@ const Cart = () => {
             Adicione alguns produtos para continuar comprando
           </p>
           <button
-            onClick={() => navigate("/")}
-            className="bg-black text-white px-6 py-3 rounded-lg hover:bg-black/90 transition-colors cursor-pointer"
+            onClick={() => {
+              navigate("/");
+
+              setTimeout(() => {
+                const section = document.getElementById("produtos");
+                section?.scrollIntoView({ behavior: "smooth" });
+              }, 300);
+            }}
+            className="bg-black text-white px-6 py-3 rounded-lg hover:bg-black/50 transition-colors cursor-pointer"
           >
             Continuar comprando
           </button>
@@ -136,13 +143,20 @@ const Cart = () => {
             </div>
           </div>
           <button
-            className="w-full bg-gray-200 text-black py-3 rounded-lg hover:bg-gray-300 transition-colors cursor-pointer"
-            onClick={() => navigate("/")}
+            onClick={() => {
+              navigate("/");
+
+              setTimeout(() => {
+                const section = document.getElementById("produtos");
+                section?.scrollIntoView({ behavior: "smooth" });
+              }, 300);
+            }}
+            className="bg-black text-white px-6 py-3 rounded-lg hover:bg-black/50 transition-colors cursor-pointer"
           >
             Continuar comprando
           </button>
           <button
-            className="w-full bg-black text-white py-3 rounded-lg hover:bg-black/90 transition-colors mt-4 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+            className="w-full bg-black text-white py-3 rounded-lg hover:bg-black/50 transition-colors mt-4 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
             onClick={handleCheckout}
             disabled={isProcessing}
           >
